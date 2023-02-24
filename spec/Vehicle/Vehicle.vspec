@@ -396,6 +396,12 @@ CurrentLocation.HorizontalAccuracy:
   unit: m
   description: Accuracy of the latitude and longitude coordinates.
 
+CurrentLocation.HeadingAccuracy:
+  datatype: double
+  type: sensor
+  unit: degrees
+  description: Accuracy of bearing in degrees.
+
 CurrentLocation.Altitude:
   datatype: double
   type: sensor
@@ -407,6 +413,18 @@ CurrentLocation.VerticalAccuracy:
   type: sensor
   unit: m
   description: Accuracy of altitude.
+
+CurrentLocation.Speed:
+  datatype: float
+  type: sensor
+  unit: m/s
+  description: Represents speed.
+
+CurrentLocation.SpeedAccuracy:
+  datatype: float
+  type: sensor
+  unit: m/s
+  description: Accuracy of speed in meters per second.
 
 CurrentLocation.GNSSReceiver:
   type: branch
